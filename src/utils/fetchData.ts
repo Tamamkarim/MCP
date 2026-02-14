@@ -1,4 +1,4 @@
-import { ErrorResponse } from '@/types/LocalTypes';
+import { ErrorResponse } from '../types/LocalTypes';
 
 const fetchData = async <T>(
   url: string,

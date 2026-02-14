@@ -1,4 +1,4 @@
-import { icsToJson } from './../src/utils/ics-to-json';
+import { icsToJson } from '../src/utils/ics-to-json';
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import {
   deleteEvent,
@@ -36,7 +36,7 @@ describe('CalDAV Client', () => {
 
   it('should list calendar events', async () => {
     const events = await listEvents();
-    events.forEach((event) => {
+    events.forEach((event: any) => {
       const eventJson = icsToJson(event.data);
       console.log('lol', eventJson, event.data);
       expect(eventJson).toBeDefined();

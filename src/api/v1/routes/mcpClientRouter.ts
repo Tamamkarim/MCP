@@ -15,7 +15,7 @@ mcpClientRouter.post('/chat', async (req, res) => {
 export default mcpClientRouter;
 import { Client } from '@modelcontextprotocol/sdk/client/index.js';
 import { StreamableHTTPClientTransport } from '@modelcontextprotocol/sdk/client/streamableHttp.js';
-import fetchData from '@/utils/fetchData';
+import fetchData from '../../../utils/fetchData';
 
 if (!process.env.MCP_SERVER_URL) {
   throw new Error('MCP_SERVER_URL environment variable is required');
